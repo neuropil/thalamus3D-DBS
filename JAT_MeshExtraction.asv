@@ -56,9 +56,9 @@ for i = 1:length(tmp3ddata)
     tmptag = tmpobj.Tag;
     dbsflag = contains(tmptag, {'Contact','Insulation'});
     if dbsflag
-        tmptag2 = replace(tmptag,'-','');
-        dbsMESHS.(tmptag2).vertices = tmpobj.Vertices;
-        dbsMESHS.(tmptag2).faces = tmpobj.Faces;
+        tmptag2 = replaces
+        dbsMESHS.(tmptag).vertices = tmpobj.Vertices;
+        dbsMESHS.(tmptag).faces = tmpobj.Faces;
     else
         continue
     end
